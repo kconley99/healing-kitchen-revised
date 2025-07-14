@@ -82,12 +82,11 @@ header {
     background-color: var(--tb);
     color: var(--text);
     font-family: 'Karla', sans-serif;
-    padding: 1rem 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
+    padding: 10px;
 }
 
 .container img {
@@ -105,15 +104,6 @@ nav ul {
 
 nav li a {
     font-size: 1.2rem;
-}
-
-.container-hamburger {
-  display: none; /* Hidden on desktop */
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
 }
 
 /* Body */
@@ -785,9 +775,12 @@ textarea {
     font-size: 22px;
 }
 
+#form-message {
+    display: none;
+}
 
 /* Tablet */
-@media (max-width: 773px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     header {
         justify-content: center;
@@ -799,10 +792,19 @@ textarea {
         padding: 0 1rem;
     }
 
+    table {
+        border: none;
+        width: 500px;
+    }
+
+    .flex-container.story {
+        font-size: 14px;
+        width: 575px;
+    }
 }
 
 /* Mobile */
-@media screen and (max-width: 563px){
+@media screen and (max-width: 768px){
 
     header.container {
         flex-direction: column;
@@ -818,70 +820,9 @@ textarea {
         text-align: center;
     }
 
-/* header ul, header li {
-    flex-direction: column;
-} */
-
-
-
-/*     .container-hamburger {
-    display: block; /* Show hamburger icon on small screens 
-    order: 2;
-  } 
-
-    /* Hide nav initially, position under header */
-    /* .main-nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #333;
-        width: 100%;
-        border-top: 2px solid #f39c12;
-        animation: slideDown 0.3s ease-out forwards;
-        z-index: 10;
-    }
-
-         .main-nav.active {
-            display: block;
-        }
-
-  .main-nav ul {
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 1rem 2rem;
-    gap: 0.75rem;
-  }
-
-  .main-nav li {
-    width: 100%;
-  }
-
-  .main-nav a {
-    display: block;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    width: 100%;
-  }
- */
-/*   .site-header {
-    flex-wrap: nowrap;
-  } */
-
-/* 
-    /* ANIMATION for dropdown menu 
-    @keyframes slideDown {
-        0% {
-            transform: translateY(-10px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    } 
-        */
+    .md-hero-height {
+    height: 1000px;
+}
 
     .hero {
         max-width: auto;
@@ -914,21 +855,35 @@ textarea {
         line-height: 20px;
         letter-spacing: 2px;
         font-weight: bold;
-        margin: 1px;
+        margin: auto;
     }
 
     .flex-container p {
         margin: 5px;
     }
 
-    .contact {
+    .card-container {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact-card {
         margin: auto;
         justify-content: center;
         align-items: center;
     }
 
+    .wide-contact-card {
+        height: 1200px;
+    }
+
     #contact-form {
-        width: 310px;
+        width: 450px;
         margin: auto;
+    }
+
+    #form-message {
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 }

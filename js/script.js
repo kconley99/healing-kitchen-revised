@@ -1,14 +1,11 @@
+// script.js
+
+// Form submission confirmation
 const form = document.getElementById('contact-form');
-const message = document.getElementById('form-message');
 
-form.addEventListener('submit', function (e) {
+form.addEventListener('submit', function(e) {
   e.preventDefault();
-
-  // Only runs if browser considers the form valid
-  if (form.checkValidity()) {
-    message.textContent = 'Message sent successfully!';
-    message.style.color = 'green';
-    message.style.display = 'block';
-    form.reset();
-  }
+  alert('Thank you for contacting us! We will get back to you soon.');
+  form.reset(); // Optional: clear the form after submission
 });
+
