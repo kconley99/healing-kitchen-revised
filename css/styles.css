@@ -15,9 +15,38 @@
     --secondary: #F58549; /* For buttons */
 }
 
+/* style guide */
+li, a {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--tb);
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
 p {
     font-weight: bold;
-    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
     line-height: 2rem;
     text-align: center;
 }
@@ -31,23 +60,18 @@ p {
 .button {
     background-color: var(--tb);
     color: var(--text);
-    border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     border: #827a47 2px solid;
     cursor: pointer;
     font-family: 'Karla', sans-serif;
-    font-size: 1.2rem;
+    font-size: 18px;
     margin-top: 30px;
 }
 
 .button:hover {
     background-color: #F58549;
     transition-duration: 0.4s;
-}
-
-button {
-    background-color: darkgreen;
 }
 
 table {
@@ -58,15 +82,13 @@ table {
     padding: 40px;
     width: 1400px;
     margin-bottom: 20px;
+    font-family: 'Karla', sans-serif;
 }
 
 /* Navigation */
 a {
     text-decoration: none;
-    font-family: 'Karla', sans-serif;
-    color: var(--text);
-    font-size: 25px;
-    
+    color: var(--text);    
 }
 
 a:hover {
@@ -81,7 +103,6 @@ a:active {
 header {
     background-color: var(--tb);
     color: var(--text);
-    font-family: 'Karla', sans-serif;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -102,22 +123,16 @@ nav ul {
   gap: 1.5rem;
 }
 
-nav li a {
-    font-size: 1.2rem;
-}
-
 /* Body */
 body{
     background-color: var(--bg);
     color: var(--text);
-    font-family: 'Karla', sans-serif;
 }
 
 .hero {
-    background-image: url("/img/index/background-img.png");
+    background-image: url("/img/index/hero.png");
     background-size: cover;
     background-position: center;
-
 }
 
 .hero-txt {
@@ -125,7 +140,6 @@ body{
     background-color: rgba(0, 0, 0, .6); /* semi-transparent black */
     padding: 1rem 2rem;
     border-radius: 10px;
-    font-family: 'Libre Baskerville', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -135,9 +149,8 @@ body{
 }
 
 .hero-txt h1 {
-    color: var(--tb);
-    font-size: 3rem;
-  }
+    font-size: 40px;
+}
 
 .hero-txt p {
     color: var(--secondary);
@@ -153,11 +166,6 @@ body{
     height: 450px;
 }
 
-h1 {
-    font-family: 'Libre Baskerville', serif;
-    text-align: center;
-}
-
 /* Flexbox container */
 .flex-container {
     display: flex;
@@ -166,7 +174,6 @@ h1 {
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    /* flex-direction: column; */
 }
 
 .flex-container footer {
@@ -180,7 +187,6 @@ h1 {
     border-radius: 10px;
     width: 500px;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -190,28 +196,6 @@ h1 {
 .card-height {
     height: 500px;
 }
-
-/* Flexbox Classes */
-/* .box {
-    align-items: center;
-    display: inline-block;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-} */
-
-/* .flex-container .flex-itm {
-    background-color: var(--primary);
-    color: var(--accent);
-    padding: 1rem;
-    border-radius: 10px;
-    width: 500px;
-    text-align: center;
-    font-family: 'Bodoni Moda SC', serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    gap: 10px;
-} */
 
 .flex-itm img {
     width: 100%;
@@ -231,8 +215,6 @@ h1 {
     border-radius: 5px;
     border: #827a47 2px solid;
     cursor: pointer;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.2rem;
 }
 
 .classes button:hover {
@@ -249,7 +231,6 @@ h1 {
     border-radius: 10px;
     width: 500px;
     text-align: center;
-    font-family: 'Bodoni Moda SC', serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     gap: 10px;
 }
@@ -271,8 +252,6 @@ h1 {
     border-radius: 5px;
     border: #827a47 2px solid;
     cursor: pointer;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.2rem;
 }
 
 .restaurant button:hover {
@@ -289,7 +268,6 @@ h1 {
     border-radius: 10px;
     width: 500px;
     text-align: center;
-    font-family: 'Bodoni Moda SC', serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     gap: 10px;
 }
@@ -311,8 +289,6 @@ h1 {
     border-radius: 5px;
     border: #827a47 2px solid;
     cursor: pointer;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.2rem;
 }
 
 .flex-container .sustainability button:hover {
@@ -328,7 +304,6 @@ h1 {
     border-radius: 10px;
     width: 500px;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     gap: 10px;
 }
@@ -341,8 +316,6 @@ h1 {
     border-radius: 5px;
     border: #827a47 2px solid;
     cursor: pointer;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.2rem;
 }
 
 .impact button:hover {
@@ -359,7 +332,6 @@ h1 {
     border-radius: 10px;
     width: 500px;
     text-align: center;
-    font-family: 'Karla', serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     gap: 10px;
 }
@@ -379,8 +351,6 @@ h1 {
     border-radius: 5px;
     border: #827a47 2px solid;
     cursor: pointer;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.2rem;
 }
 
 .special button:hover {
@@ -389,8 +359,8 @@ h1 {
     border: #585330 2px solid;
     transition: background-color 0.3s ease-in-out;
 }
+
 h2 {
-    font-family: 'Libre Baskerville', serif;
     text-align: center;
     color: var(--text);
     margin: 1rem 0;
@@ -399,10 +369,8 @@ h2 {
 
 .meals {
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
     color: var(--text);
     margin: 1rem 0;
-    font-size: 3rem;
 }
 
 /* Card Styles */
@@ -433,17 +401,14 @@ h2 {
     font-weight: bold;
 }
 
-.card-info {
-    font-family: 'Karla', serif;
-}
 .card-info h3 {
-    font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
+
 .card-info p {
-    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -453,13 +418,12 @@ h2 {
     padding: 2rem;
 }
 
-.values-card {
+.values-card, .impact-card, .sustainability-card {
     background-color: var(--primary);
     color: var(--accent);
     border-radius: 10px;
     padding: 1rem;
     width: 550px;
-    height: 850px;
     gap: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -467,38 +431,18 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.values-card {
+    height: 850px;
 }
 
 .impact-card {
-    background-color: var(--primary);
-    color: var(--accent);
-    border-radius: 10px;
-    padding: 1rem;
-    width: 550px;
     height: 300px;
-    gap: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .sustainability-card {
-    background-color: var(--primary);
-    color: var(--accent);
-    border-radius: 10px;
-    padding: 1rem;
-    width: 550px;
     height: 900px;
-    gap: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .wide-contact-card {
@@ -516,23 +460,7 @@ h2 {
     justify-content: center;
 }
 
-.donation-card {
-    background-color: var(--primary);
-    color: var(--accent);
-    border-radius: 10px;
-    padding: 1rem;
-    width: 550px;
-    height: 600px;
-    gap: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.dessert-card {
+.donation-card, .dessert-card {
     background-color: var(--primary);
     color: var(--accent);
     border-radius: 10px;
@@ -556,56 +484,45 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.class-card {
+.class-card, .contact-card {
     background-color: var(--primary);
     color: var(--accent);
     border-radius: 10px;
     padding: 1rem;
-    width: 600px;
-    height: 700px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+.class-card {
+    width: 600px;
+    height: 700px;
     justify-content: space-evenly;
 }
 
 .contact-card {
-    background-color: var(--primary);
-    color: var(--accent);
-    border-radius: 10px;
-    padding: 1rem;
     width: 500px;
     height: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
     justify-content: center;
 }
 
 /*Menu Page Styles */
 /*Beverages */
  .flex-container h3 {
-    font-family: 'Libre Baskerville', serif;
     text-align: center;
     color: var(--text);
     margin: 20px;
-    font-size: 2rem;
     align-items: center;
     justify-content: center;
 }
 
 .bev-container h3 {
-    font-family: 'Libre Baskerville', serif;
     text-align: center;
     color: var(--text);
     margin: auto;
-    font-size: 2rem;
 }
 
 .flex-container table {
@@ -618,31 +535,27 @@ h2 {
 .bev-table {
     border-collapse: collapse;
     margin: 2rem 0;
-    font-family: 'Karla', serif;
     display: flex;
 }
+
 .bev-table th, .bev-table td {
     border: 1px solid var(--tb);
     padding: 1.5rem;
     text-align: left;
     background-color: var(--tb);
     color: #fbeed7;
-    font-family: Corben;
 }
 
 .bev-special p {
     font-weight: bold;
-    font-size: 20px;
 }
 
 .bev-special h4 {
     margin: 5px;
-    font-size: 22px;
 }
 
 .today-special h2 {
     margin: 5px;
-    font-size: 22px;
     color: var(--accent);
 }
 
@@ -672,17 +585,15 @@ h2 {
     margin: 1rem;
 }
 .flex-container .flex-item h1 {
-    font-family: 'Libre Baskerville', serif;
     text-align: center;
     color: var(--text);
     margin: 1rem 0;
-    font-size: 2.5rem;
 }
+
 .flex-container .flex-item p {
     text-align: center;
     color: var(--text);
     margin: 1rem 0;
-    font-size: 1.2rem;
 }
 
 .flex-container.story {
@@ -692,7 +603,6 @@ h2 {
     border-radius: 10px;
     width: 90%;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: auto;
 }
@@ -703,7 +613,6 @@ h2 {
 }
 
 .flex-container.story h4 {
-    font-size: 1.5rem;
     color: var(--text);
     letter-spacing: 1.2px;
     line-height: 1.4;
@@ -714,7 +623,6 @@ footer {
     background-color: var(--tb);
     color: var(--text);
     text-align: center;
-    font-family: 'Karla', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -722,17 +630,7 @@ footer {
 
 .footer p {
     margin: 0;
-    font-size: 1rem;
 }
-
-/* .footer {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    gap: 0.5rem;
-} */
 
  footer img {
     width: auto;
@@ -779,6 +677,8 @@ textarea {
     display: none;
 }
 
+
+/* media queries */
 /* Tablet */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
@@ -804,86 +704,84 @@ textarea {
 }
 
 /* Mobile */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 425px){
 
-    header.container {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 5px;
-    }
-
-    nav li {
-        text-align: center;
-    }
-
-    .md-hero-height {
-    height: 1000px;
+header {
+    flex-direction: column;
 }
 
-    .hero {
-        max-width: auto;
-    }
+nav ul {
+    flex-direction: column;
+    text-align: center;
+}
 
-    .hero-txt h1 {
-        font-size: 2rem;
-    }
+.md-hero-height {
+    height: 500px;
+}
 
-    .flex-container {
-        padding: 1rem;
-    }
+.hero h1 {
+    font-size: 18px;
+}
 
-    .flex-container img {
-        max-width: 300px;
-    }
+.hero p {
+    font-size: 16px;
+    line-height: 35px;
+}
 
-    .flex-container .flex-itm {
-        justify-content: center;
-        align-items: center;
-    }
+.hero-txt {
+    gap: 15px;
+}
 
-    footer {
-        flex-direction: column;
-    }
+.hero-txt p {
+    padding: 15px;
+}
 
-    table {
-        width: 310px;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 2px;
-        font-weight: bold;
-        margin: auto;
-    }
+.flex-container.story {
+    margin: 0;
+    border-radius: 0;
+    width: auto;
+    padding: 0;
+}
 
-    .flex-container p {
-        margin: 5px;
-    }
+.card-container {
+    padding: 5px;
+    border-radius: 0;
+}
 
-    .card-container {
-        padding: 0;
-        margin-bottom: 10px;
-    }
+.values-card, .impact-card, .sustainability-card, .donation-card, .class-card {
+    width: 400px;
+}
 
-    .contact-card {
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-    }
+.card-container img, .card img {
+    width: 400px;
+}
 
-    .wide-contact-card {
-        height: 1200px;
-    }
+.card {
+    width: 400px;
+}
 
-    #contact-form {
-        width: 450px;
-        margin: auto;
-    }
+table {
+    width: 300px;
+    font-size: 16px;
+}
 
-    #form-message {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
+.contact-card {
+    width: 350px;
+    height: 200px;
+}
+
+.wide-contact-card {
+    padding: 0;
+    height: 1000px;
+    gap: 0;
+}
+
+.wide-contact-card h2 {
+    padding: 5px;
+}
+
+.flex-container {
+    gap: 15px;
+}
+
 }
