@@ -713,6 +713,7 @@ header {
 nav ul {
     flex-direction: column;
     text-align: center;
+    gap: 5px;
 }
 
 .md-hero-height {
@@ -729,7 +730,8 @@ nav ul {
 }
 
 .hero-txt {
-    gap: 15px;
+    gap: 0;
+    height: 300px;
 }
 
 .hero-txt p {
@@ -781,7 +783,13 @@ table {
 }
 
 .flex-container {
-    gap: 15px;
+    gap: 30px;
+}
+
+.flex-container .flex-itm {
+    border-radius: 0;
+    gap: 0;
+    width: 425px;
 }
 
 }
