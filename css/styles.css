@@ -708,6 +708,7 @@ textarea {
 
 header {
     flex-direction: column;
+    gap: 15px;
 }
 
 nav ul {
@@ -731,7 +732,7 @@ nav ul {
 
 .hero-txt {
     gap: 0;
-    height: 300px;
+    height: 400px;
 }
 
 .hero-txt p {
@@ -763,8 +764,9 @@ nav ul {
 }
 
 table {
-    width: 300px;
+    width: 420px;
     font-size: 16px;
+    padding: 0;
 }
 
 .contact-card {
@@ -790,6 +792,10 @@ table {
     border-radius: 0;
     gap: 0;
     width: 425px;
+}
+
+footer {
+    flex-direction: column;
 }
 
 }
