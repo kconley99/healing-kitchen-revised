@@ -795,7 +795,7 @@ table {
     width: 425px;
 }
 
-.footer {
+footer {
     flex-direction: column;
 }
 
